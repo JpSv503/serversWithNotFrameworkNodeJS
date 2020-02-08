@@ -1,0 +1,27 @@
+->NodeJS está conformado por módulos.
+	-Primero creé el index para mi proyecto.
+
+
+-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/
+		Usando NPM
+1-> podemos agregar cualquier paquete solicitando la linea:
+	-npm install <name> ej: -> npm i colors
+	=====	=====	=====	=====	=====	=====	=====	=====	=====
+	Esto nos agrega un paquete y un package-look.json (No tocaremos nada de ello)
+	=====	=====	=====	=====	=====	=====	=====	=====	=====
+
+2-> Al momento de que querramos subir nuestro código a un servidor en la nuve
+	diremos:
+	-npm init
+		-<Nos solicita informacion y le brindamos la info que nos pide>
+	-Se agrega un package.json (Archivo de configuracion sobre nuestro proyecto).
+	-Ahí lo importante es "dependences"
+	Ya que cuando querramos utilizar nuestro proyecto en otro computador,
+	Al iniciar el proyecto, este va a leer el package.json, y hará la instalacion
+	de nuestras dependencias.
+
+Cabe mencionar que al momento de subir los archivos, podemos borrar el modulo que viene, ya que
+tenemos referencias en el package.json de lo que requerimos, y cuando el proyecto se instale, este
+descargará los modulos necesarios.
+Lo último se ejecutará con el comando ->npm install
+-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/

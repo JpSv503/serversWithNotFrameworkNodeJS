@@ -1,5 +1,5 @@
 const HTTP = require("http");
-
+const COLORS = require('colors');
 //handleServer->manejador del servidor
 
 const handleServer = function(req, res){
@@ -10,13 +10,13 @@ const handleServer = function(req, res){
  }
 
  const server = HTTP.createServer(handleServer);
- server.listn(3000, function(){
-     console.log('server on port 3000');
+ server.listen(3000, function(){
+     console.log('server on port 3000'.bgBlue);
  });
 
 
 
- /**
+ /** Use->Node Package Manager
  *NPM y frameworks ============ lo habla en 1hh17mm;
  * npmjs.com
  */
