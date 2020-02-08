@@ -1,10 +1,4 @@
-const Math = require("./mat"); 
-/*Ponemos ./ porque es un modulo dentro de nuestra carpeta
-y no propio del equipo.
-*/
-console.log(Math.add(1,2));
-console.log(Math.substract(1,2));
-console.log(Math.multiply(1,2));
-console.log(Math.divide(1,0));
-console.log(Math.divide(1,2));
-console.log(Math);
+//en el require, las letras van en minusculas
+const OS = require("os");
+console.log("Plataforma:\t",OS.platform());
+console.log("Interfaces de Red\n",OS.networkInterfaces());
